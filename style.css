@@ -1,0 +1,457 @@
+*{
+    font-family: a;
+    padding: 0;
+    margin: 0;
+    box-sizing:border-box; 
+    outline: none;
+    scroll-behavior: smooth;
+}
+body{
+    background: rgb(41, 39, 39);
+}
+.container{
+    padding: 20px;
+    background: rgb(43, 48, 43);
+    position: sticky;
+    top: 0;
+}
+.cont{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.myhome{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    height: 100vh;
+    padding-top: 40px;
+}
+.myname{
+    margin-left: 100px;
+    color: cyan;
+    text-decoration: none;
+}
+.cont ul li{
+    list-style: none;
+    display: inline-block;
+    margin-right: 50px;
+    position: relative;
+}
+.cont ul li a{
+    text-decoration: none;
+    color: antiquewhite;
+    cursor: pointer;
+    font-size: 1.8rem;
+}
+.cont ul li a::after{
+  content: "";
+  position: absolute;
+  height: 3px;
+  width: 0%;
+  left: 0;
+  bottom: 0;
+  background: cyan;
+  transition: .3s ease;
+}
+.cont ul li a:hover::after{
+  width: 100%;
+}
+.cont a:hover,
+.cont a.active{
+    color: aqua;
+}
+.cname{
+    font-size: 3.5rem;
+    color: white;
+}
+.fname{
+    color: white;
+    font-size: 5rem;
+}
+#skills{
+    color: cyan;
+    display: inline-block;
+    min-width: 320px;
+}
+.sname{
+    font-size: 3rem;
+    color: white;
+}
+.text{
+    font-size: 1.5rem;
+    color: white;
+}
+.ident{
+    margin-left: 100px;
+    margin-top: 10px;
+    padding: none;
+}
+.home-img img{
+    width: 25vw;
+    height: 400px;
+    box-shadow: 2px 2px 20px cyan;
+}
+
+.social-media a{
+    display: inline-flex;
+    height: 40px;
+    width: 40px;
+    background: transparent;
+    border: 2px solid cyan;
+    border-radius: 50%;
+    font-size: 20px;
+    color: cyan;
+    text-decoration: none;
+    justify-content: center;
+    align-items: center;
+    margin: 20px 15px 40px 0px;
+    transition: .9s ease;
+}
+.social-media a:hover{
+    background: cyan;
+    color: black;
+    box-shadow: 0px 0px 30px;
+}
+
+.About{
+    background: rgb(43, 41, 41);
+}
+.about{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 3rem;
+    height: 100vh;
+}
+.myImage img{
+    width: 30vw;
+    height: 400px;
+    object-fit: cover;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 2px 2px 20px cyan;
+}
+.heading{
+    color: white;
+    font-size: 3.5rem;
+}
+
+.myhead{
+    color: white;
+    font-size: 3rem;
+}
+
+.myhead span{
+  color: cyan;
+}
+
+.parag{
+    padding-top: 10px;
+    color: aliceblue;
+    font-size: 1.5rem;
+}
+
+:root{
+    --html: 80%;
+    --css: 60%;
+    --js: 50%;
+    --bts: 50%;
+    --php: 70%;
+  }
+  .skill-end{
+    display: flex;
+    align-content: center;
+    justify-content: center;
+    gap: 5rem;
+    height: 80vh;
+    padding-top: 20px;
+}
+  
+  .skills {
+    margin-left: 0;
+    color: white;
+    background: rgb(39, 37, 37);
+    border: 2px solid rgb(21, 22, 22);
+    padding: 50px;
+    width: 30vw;
+    height: 450px;
+    overflow: hidden;
+    box-shadow: 2px 2px 20px rgb(19, 18, 18);
+  }
+  
+  .skills li {
+    text-transform: uppercase;
+    margin: 20px 0px;
+    list-style: none;
+    padding: 10px;
+  }
+.skills:hover{
+  box-shadow: 2px 2px 20px cyan;
+  transition: .5s ease-in;
+  cursor: pointer;
+}
+  .Myskill span{
+    color: cyan;
+  }
+  div.skills h1{
+    font-weight: 700;
+    text-transform: uppercase;
+    text-align: center;
+  }
+  div.skills h1::after{
+    margin: 5px auto;
+    content: "";
+    display: block;
+    width: 50%;
+    height: 4px;
+    background: cyan;
+  }
+  .bar {
+    background: #353b48;
+    display: block;
+    height: 4px;
+    border: 1px solid rgba(0, 0, 0, 0.3);
+    border-radius: 3px; 
+    overflow: hidden;
+    box-shadow: 0 0 10px #2187e7b3;
+    position: relative;
+  }
+  
+  .bar span {
+    height: 4px;
+    position: absolute;
+    left: 0;
+    background: cyan;
+  }
+  
+  .html {
+    width: var(--html);
+    animation: html 2s ease;
+  
+  }
+  
+  .css {
+    width: var(--css);
+    animation: css 2s linear;
+  
+  }
+  
+  .js {
+    width: var(--js);
+    animation: js 2s linear;
+  
+  }
+  
+  .bts {
+    width: var(--bts);
+    animation: bts 2s linear;
+  }
+
+  .php {
+    width: var(--php);
+    animation: php 2s linear;
+  }
+  
+  @keyframes html {
+    0% {
+      width: 0%;
+    }
+  
+    100% {
+      width: var(--html);
+    }
+  }
+  @keyframes html {
+    0% {
+      width: 0%;
+    }
+  
+    100% {
+      width: var(--html);
+    }
+  }
+  @keyframes bts {
+    0% {
+      width: 0%;
+    }
+  
+    100% {
+      width: var(--bts);
+    }
+  }
+  @keyframes css {
+    0% {
+      width: 0%;
+    }
+  
+    100% {
+      width: var(--css);
+    }
+  }
+  @keyframes js {
+    0% {
+      width: 0%;
+    }
+  
+    100% {
+      width: var(--js);
+    }
+  }
+  @keyframes bts {
+    0% {
+      width: 0%;
+    }
+  
+    100% {
+      width: var(--bts);
+    }
+  }
+
+  @keyframes php{
+    0% {
+      width: 0%;
+    }
+  
+    100% {
+      width: var(--php);
+    }
+  }
+.myimages{
+  width: 50vw;
+  height: 450px;
+  background: rgb(39, 37, 37);
+  box-shadow: 2px 2px 20px rgb(19, 18, 18);
+  border: 2px solid rgb(21, 22, 22);
+  overflow: hidden;
+}
+
+.activity{
+  text-align: center;
+  padding-top: 10px;
+  color: white;
+  font-weight: 700;
+}
+.activity::after{
+  content: "";
+  display: block;
+  margin: 10px auto;
+  height: 3px;
+  width: 20%;
+  background: cyan;
+}
+.activity span{
+  color: cyan;
+}
+.cols{
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  padding-top: 20px;
+  margin: 0 40px;
+  row-gap: 5px;
+  gap: 5px;
+}
+
+.certificate1{
+    width: 300px;
+    height: 170px;
+    object-fit: cover;
+    background-size: 100% 100%;
+    animation: animal1 10s linear infinite;
+}
+.certificate2{
+    width: 300px;
+    height: 170px;
+    object-fit: cover;
+    background-size: 100% 100%;
+    animation: animal2 15s linear infinite;
+}
+
+.certificate3{
+  width: 300px;
+  height: 170px;
+  background-size: 100% 100%;
+  object-fit: cover;
+  animation: animal3 16s linear infinite;
+}
+
+.certificate4{
+  width: 300px;
+  height: 170px;
+  object-fit: cover;
+  background-size: 100% 100%;
+  animation: animal4 30s linear infinite;
+}
+
+
+@keyframes animal1{
+  0%{
+    background-image: url('prog1.jpg');
+  }
+  30%{
+    background-image: url('prog2.jpg');
+  }
+  60%{
+    background-image: url('prog3.jpg');
+  }
+  100%{
+    background-image: url('prog4.jpg');
+  }
+}
+
+@keyframes animal2{
+  0%{
+    background-image: url('dev1.jpg');
+  }
+  30%{
+    background-image: url('dev2.jpg');
+  }
+  60%{
+    background-image: url('dev3.jpg');
+  }
+  100%{
+    background-image: url('dev4.jpg');
+  }
+}
+
+@keyframes animal3{
+  0%{
+    background-image: url('code1.jpg');
+  }
+  30%{
+    background-image: url('code2.jpg');
+  }
+  60%{
+    background-image: url('code3.jpg');
+  }
+  100%{
+    background-image: url('code4.jpg');
+  }
+}
+
+@keyframes animal4{
+  0%{
+    background-image: url('pic1.jpg');
+  }
+  30%{
+    background-image: url('pic2.jpg');
+  }
+  60%{
+    background-image: url('pic3.jpg');
+  }
+  100%{
+    background-image: url('pic4.jpg');
+  }
+}
+.myimages:hover{
+   box-shadow: 2px 2px 20px cyan;
+   transition: .5s ease-in;
+   cursor: pointer;
+}
+footer{
+  padding: 15px;
+  background: rgb(43, 48, 43);
+  text-align: center;
+  font-size: 1rem;
+  color: white;
+}
